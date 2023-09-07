@@ -10,8 +10,37 @@ img {
  }
 
  body {
-    /* padding: 100px 100px; */
     background-color: black;
+ }
+
+ ol, li, menu {
+    list-style: none;
+    font-size: 24px;
+    line-height: normal;
+    color: white;
+ }
+
+
+
+ button {
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: white;
+    
+ }
+
+ .fa-solid .fa-microphone {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .fa-solid .fa-microphone {
+    display: block;
+ }
+
+ select {
+    background-color: none;
  }
 
  .container {
@@ -20,25 +49,23 @@ img {
     gap: 20px;
     margin: 0 auto;
     justify-content: center;
-    padding: 40px;
  }
 
  #web-app{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    overflow: hidden;
+    height: calc(100vh - 80px);
+    overflow-y: scroll;
+    
+    padding: 60px;
  }
 
  .user-card {
-    flex-basis: calc(100%/8);
+    flex-basis: 210px;
     position: relative;
-    flex-grow: 1;
  }
 
 
  .name-badge {
-    background-color: grey;
+    background-color: hsla(240, 3%, 94%, 0.2);
     line-height: 24px;
     position: absolute;
     left: 0px;
@@ -48,5 +75,28 @@ img {
 
  .tool-bar {
     padding: 20px;
-    background-color: #222222 ;
+    background-color: #222222;
+    height: 80px;
  }
+
+ .container-tool-bar {
+    width: 100%;
+    max-width: 2100px;
+    margin: 0 auto;
+ }
+
+ .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .col-3 {
+	flex-basis: calc((100% / 12) * 3);
+}
+
+.col-6 {
+	flex-basis: calc((100% / 12) * 6);
+}
+
+
