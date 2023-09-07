@@ -1,3 +1,4 @@
+/* RESETTING/ GENERAL RULES */
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@ img {
 
  body {
     background-color: black;
+    position: relative;
  }
 
  ol, li, menu {
@@ -18,16 +20,24 @@ img {
     font-size: 24px;
     line-height: normal;
     color: white;
+    display: inline-block;
+    padding-left: 20px;
+    text-align: left;
  }
 
-
-
  button {
-    font-size: 20px;
+    font-size: 14px;
+    font-weight: bold;
     background: none;
     border: none;
     color: white;
     
+ }
+
+ /* END OFF RESETTING/ GENERAL RULES */
+
+ li,button:hover {
+   cursor: pointer;
  }
 
  .fa-solid .fa-microphone {
@@ -40,7 +50,11 @@ img {
  }
 
  select {
-    background-color: none;
+    background-color: #222222 ;
+    border: none;
+    position: absolute;
+    top:50%;
+    color: white;
  }
 
  .container {
@@ -51,18 +65,16 @@ img {
     justify-content: center;
  }
 
- #web-app{
+ #web-app {
     height: calc(100vh - 80px);
-    overflow-y: scroll;
-    
+    overflow-y: hidden;
     padding: 60px;
  }
 
  .user-card {
-    flex-basis: 210px;
+    flex-basis: 208px;
     position: relative;
  }
-
 
  .name-badge {
     background-color: hsla(240, 3%, 94%, 0.2);
@@ -73,10 +85,36 @@ img {
     color: white;
  }
 
+ .speaker-badge {
+   background-color: hsla(240, 3%, 94%, 0.2);
+    line-height: 24px;
+    color: white;
+    font-size: 18px;
+    padding:3px;
+    border-radius: 999px;
+ }
+
+ .resize-badge {
+   background-color: hsla(240, 3%, 94%, 0.2);
+    line-height: 24px;
+    color: white;
+    font-size: 18px;
+    padding:3px;
+    border-radius: 999px;
+ }
+
+.top-badge-conatiner {
+   position: absolute;
+   right: 8px;
+   top:15px
+   
+}
+
  .tool-bar {
     padding: 20px;
     background-color: #222222;
     height: 80px;
+    position: relative;
  }
 
  .container-tool-bar {
@@ -91,12 +129,37 @@ img {
     align-items: center;
  }
 
- .col-3 {
-	flex-basis: calc((100% / 12) * 3);
+ .col-2 {
+	flex-basis: calc((100% / 12) * 2);
+   text-align: center;
 }
 
-.col-6 {
-	flex-basis: calc((100% / 12) * 6);
+.col-8 {
+	flex-basis: calc((100% / 12) * 8);
+   text-align: center;
 }
 
+.centered {
+    justify-content: center;
+}
 
+.icon {
+   text-align: center;
+}
+
+.fa-share-from-square {
+   color: green;
+}
+
+.end-call {
+   color: red;
+   font-size: bold;
+   line-height: 32px;
+   background-color: hsla(240, 3%, 94%, 0.2);
+   padding: 5px;
+   border-radius: 999px;
+}
+
+.top-badge, .top-badge-2 { 
+   display: inline-block;
+}

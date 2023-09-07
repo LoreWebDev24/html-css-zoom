@@ -15,8 +15,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Kanit:wght@200;400;800&display=swap" rel="stylesheet" />
 </head>
+<!-- Web App "Main" -->
 <body>
     <div id="web-app">
+        <div class="top-badge-conatiner">
+            <div class="top-badge">
+                <span class="speaker-badge"> <i class="fa-solid fa-users-viewfinder"></i></i> Speaker View</span> 
+            </div>
+            <div class="top-badge-2">
+                <span class="resize-badge"><i class="fa-solid fa-maximize"></i></span>
+            </div>
+        </div>
         <div class="container user-cards">
             <div class="user-card">
                 <img src="./img/55-300x200.jpg" alt="">
@@ -230,25 +239,67 @@
             </div>
         </div>
     </div>
+    <!-- Tool Bar -->
     <div class="tool-bar">
         <div class="container-tool-bar">
             <div class="row">
-                <div class="col-3">
+                <div class="col-2">
                     <ol>
                         <li>
-                            <div class="centered"><i class="fa-solid fa-microphone"></i></div>
-                            <div><button>Mute</button> <select name="" id=""></select></div>    
-                    </li>
+                            <div class="icon"><i class="fa-solid fa-microphone"></i></div>
+                            <div><button>Mute</button> <select name="" id=""></select></div>
+                        </li>
+                        <li>
+                            <div class="icon"><i class="fa-solid fa-video"></i></div>
+                            <div><button>Stop Video</button> <select name="" id=""></select></div>
+                        </li>
                     </ol>
                 </div>
-                <div class="col-6">
+                <div class="col-8">
+                    <ol>
+                        <li>
+                            <div class="icon"><i class="fa-solid fa-user-plus"></i></div>
+                            <div><button>Invite</button>
+                        </li>
+                        <li>
+                            <div class="icon"><i class="fa-solid fa-users"></i></div>
+                            <div><button>Manage partecipants</button>
+                        </li>
+                        <li>
+                            <div class="icon"><i class="fa-solid fa-chart-column"></i></div>
+                            <div><button>Polling</button> 
+                        </li>
+                        <li>
+                            <div class="icon"><i class="fa-solid fa-share-from-square"></i></div>
+                            <div><button>Share Screen</button> <select name="" id=""></select></div>
+                        </li>
+                        <li>
+                            <div class="icon"><i class="fa-solid fa-comment"></i></div>
+                            <div><button>Chat</button>
+                        </li>
+                        <li>
+                            <div class="icon"><i class="fa-solid fa-record-vinyl"></i></div>
+                            <div><button>Record</button> 
+                        </li>
+                        <li>
+                            <div class="icon"><i class="fa-brands fa-windows"></i></div>
+                            <div><button>Breakout Rooms</button> 
+                        </li>
+                        <li>
+                            <div class="icon"><i class="fa-solid fa-ellipsis"></i></div>
+                            <div><button>More</button> 
+                        </li>
+                    </ol>
                 </div>
-                <div class="col-3">
+                <div class="col-2">
+                    <div>
+                        <button class="end-call">
+                            End Call
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    
 </body>
 </html>
