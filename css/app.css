@@ -15,7 +15,7 @@ img {
     position: relative;
  }
 
- ol, li, menu {
+ li, menu {
     list-style: none;
     font-size: 24px;
     line-height: normal;
@@ -40,10 +40,6 @@ img {
    cursor: pointer;
  }
 
- .fa-solid .fa-microphone {
-    display: flex;
-    flex-direction: column;
- }
 
  .fa-solid .fa-microphone {
     display: block;
@@ -111,7 +107,10 @@ img {
 }
 
  .tool-bar {
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: px;
+    padding-right: 5px;
     background-color: #222222;
     height: 80px;
     position: relative;
@@ -131,7 +130,7 @@ img {
 
  .col-2 {
 	flex-basis: calc((100% / 12) * 2);
-   text-align: center;
+   text-align: left;
 }
 
 .col-8 {
@@ -154,7 +153,6 @@ img {
 .end-call {
    color: red;
    font-size: bold;
-   line-height: 32px;
    background-color: hsla(240, 3%, 94%, 0.2);
    padding: 5px;
    border-radius: 999px;
@@ -162,4 +160,8 @@ img {
 
 .top-badge, .top-badge-2 { 
    display: inline-block;
+}
+
+.allign-right {
+   text-align: right;
 }
